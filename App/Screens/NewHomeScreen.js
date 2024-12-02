@@ -7,7 +7,6 @@ import MyScreen from '../Screens/Myscreen/MyScreen';
 import RecipeCommunityScreen from './RecipeCommunityScreen/Page';
 import ChatScreen from '../Screens/ChatScreen/ChatScreen';
 import CustomHeader from '../components/CustomHeader';
-import BoardScreen from '../Screens/BoardScreen'; 
 
 const Tab = createBottomTabNavigator();
 
@@ -57,7 +56,6 @@ const TabNavigator = () => {
 
 const HomeScreenContent = () => (
   <SafeAreaView style={styles.container}>
-    <BoardScreen />
   </SafeAreaView>
 );
 

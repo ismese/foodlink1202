@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, Image, FlatList, StyleSheet } from "react-native";
 
-const RecipeList = () => {
+const MyRecipeList = () => {
   // 레시피 데이터
-  const recipes = Array(10).fill({
+  const recipes = Array(5).fill({
     uri: null, // 이미지 URL 대신 null로 설정
     title: "레시피 제목",
     author: "작성자",
@@ -87,4 +87,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default RecipeList;
+export default MyRecipeList;

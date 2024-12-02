@@ -10,7 +10,7 @@ const HeartScreen = ({ navigation }) => {
         <TouchableOpacity onPress={() => navigation.goBack()} style={styles.backButton}>
           <Ionicons name="arrow-back" size={24} color="#333" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>전체 서비스</Text>
+        <Text style={styles.headerTitle}>찜</Text>
       </View>
 
       {/* 콘텐츠 영역 */}
@@ -44,14 +44,16 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     textAlign: 'center',
-    flex: 1,
+    flex: 1, // 텍스트를 가운데로 정렬
     color: '#333',
+    marginLeft: -32, // 헤더 타이틀이 버튼의 크기에 밀리지 않도록 조정
   },
   content: {
     flex: 1,
     justifyContent: 'center', // 세로 중앙 정렬
     alignItems: 'center', // 가로 중앙 정렬
     paddingHorizontal: 16,
+    backgroundColor: '#f9f9f9',
   },
   text: {
     fontSize: 16,

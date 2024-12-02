@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { SafeAreaView, View, Text, FlatList, TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { firestore } from '../../../../firebase';
-import { requestLocationPermission, getCurrentLocation } from '../../../utils/locationUtils';
-import { watchNearbyPosts } from '../../../utils/watchNearbyPosts';
+
+
 import styles from '../Alarm/AlarmScreen.Style';
 
 const NotificationScreen = () => {
